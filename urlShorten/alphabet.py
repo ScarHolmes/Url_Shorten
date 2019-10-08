@@ -4,7 +4,7 @@ from random import shuffle
 
 class Alphabet():
 
-	base_alphabet = string.ascii_letters + string.digits
+	base_alphabet = list(string.ascii_letters + string.digits)
 
 
 	def __init__(self):
