@@ -13,15 +13,19 @@ class URL():
 		self.creation_time = time.time()
 
 	def time_stamp_calc(self):
-		# temp_time = floor(self.creation_time)
+		time = floor(self.creation_time)
 		# choosing a seed value to compare, in this case, the date im writing this code
-		# seed = 10012019
-		# alpha = Alphabet()
-		# alpha.shuffle()
+		seed = 10012019
+		alpha = Alphabet()
+		alpha.shuffle()
+		index = (time % seed)
 		# digit_one = alpha[temp_time % seed]
 		# alpha = alpha.shuffle()
 		# digit_two = alpha[temp_time % seed]
 
-		return
+		return index
 		# WIP
+
+temp = URL()
+print(temp.time_stamp_calc())
 
